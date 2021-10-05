@@ -1,0 +1,14 @@
+I första uppgiften så gjorde jag en funktion som ska generera random nummer. 
+Det gjorde jag genom att först göra en for loop som har en let i på värde av 0, som skall vara mindre än 10. 
+Efter loopen har genomförts så addrerar den med ett, sedan så gör jag en variabel som har värdet av Math.floor(Math.random() * 101) sedan gör jag fältet med position i samma värde som det generade numret. 
+Dock har jag en if-sats som kollar om det generade numret redan existerar i fältet, i så fall skall den genera en nytt nummer, tills den har generat ett nytt, efter så ersätter jag en paragraf med generade numrena. 
+Sedan så sorterar jag fältet och gör en ny for loop där jag ersätter en annan paragraf med vad som har sorteras.
+
+Nästa uppgift som är att göra en form i HTML där javascript skall validera att man har skrivit korrekt. 
+Först så gjorde jag en function som kallas när man trycker på submit knappen. 
+Där hade jag en variabel som hittar en element i dokumenten för användarnamn. 
+Sedan har jag en variabel för formalia för hur en email skall se ut. 
+Efter det gjorde jag tre booleans som en kollar om lösenorden är dess samma och emailet är korrekt, den tredje är en boolean som kollar om det är tomt. 
+Sedan gjorde jag en if sats som kollar om användarnamnet är tom och att den är större än 0. Sedan kallar jag upp en funktion som verifierar lösenorden, där den kollar om den är mindre än 6 tecken, och sen kollar om lösenordens värde är dess samma, annars så varnar den användaren att lösenorden skall vara dess samma. 
+Senare så kollar jag om emailet är korrekt annars skall den varna användaren. 
+Sist så kollar den att alla booleans är sanna och en check box är incheckad, annars alertar den använderen att man skall läsa terms of condition.

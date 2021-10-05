@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <title>Document Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- <script src=”https://code.jquery.com/jquery.js”></script> -->
+    </head>
+    <body>
+        <header class="bg-dark text-white p-5">
+            <img id="Logo" src="img/logo.png" alt="logo" class="img-fluid bg-dark">
+            <h1 id="Headtext" class="bg-dark">Sign up form</h1>
+            <hr>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">NAVBAR</a>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Form</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="formtwo.html">Form fake</a>
+                      </li>
+                  </ul>
+              </div>
+        </nav>
+        <hr>
+        </header>
+        
+        <form action="registered.html" onsubmit="return submitForm()">
+            <fieldset class="bg-white text-dark">
+                <legend class="bg-white text-dark">User info</legend>
+                <div class="form-group bg-white text-dark">
+                    <p class="bg-white text-dark">Username</p>
+                    <input type="text" class="bg-white text-dark" id="userName" name="userName">
+                    <p class="bg-white text-dark">Password</p>
+                    <input type="password" class="bg-white text-dark" id="pwd" name="password">
+                    <p class="bg-white text-dark">Confirm Password</p>
+                    <input type="password" class="bg-white text-dark" name="confirmPwd" id="confirmPwd">
+                </div> 
+                <div class="form-group bg-white text-dark">
+                    <p class="bg-white text-dark">E-mail</p>
+                    <input type="email" class="bg-white text-dark" name="eMail" id="email">
+
+                </div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset class="bg-white text-dark">
+            <div class="form-check bg-white text-white">
+                <input type="checkbox" class="form-check-input bg-white text-dark" id="checkBox">
+                <label class="form-check-label bg-white text-dark" for="checkBox">Check if you have read the term</label>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary" id="submitBtn" onclick="submitForm()">
+        <!--<button type="button" class="btn btn-primary" id="submitBtn" onclick="submitForm()">Submit</button>-->
+            
+        </form>
+
+        <script src="script.JS"></script>
+    </body>
+</html>

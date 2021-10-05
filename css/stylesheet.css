@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#Logo{
+    background-color: black;
+    width:auto;
+    min-width:15%;
+    max-width:45%;
+    height:auto
+}
+
+#Headtext{
+    
+    text-align: center;
+    background-color: black;
+}
+
+body{
+background-color: purple;
+}
+
+#formholder{
+    width:50%;
+    height:50%;
+    margin:auto;
+}
+
+
+
+nav{
+    background-color: #343a40;
+}
+
+input:focus{
+    width: 250px;
+    border: 10px inset pink;
+}
+
+p{
+    background-color: purple;
+}
