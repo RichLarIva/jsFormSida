@@ -39,10 +39,9 @@ function submitForm(){
 
     if(username.value.length > 0){
         emptyChecker = false;
-        return false;
     }
 
-    verifyPWD(password, confirmPwd)
+    //verifyPWD(password, confirmPwd)
     
     if(emailText.value.match(mailformat)){
         console.log("VALID EMAIL!!");
@@ -53,9 +52,10 @@ function submitForm(){
         emailReal = false;
     }
 
-    if(passwordSame == true && emailReal == true && emptyChecker == false){
+    if(verifyPWD(password, confirmPwd) == true && emailReal == true && emptyChecker == false){
+        console.log("test wrok");
         return true;
-
+        
     }
     else{
         alert("READ THE TERMS!");
@@ -66,7 +66,7 @@ function submitForm(){
 }
 
 function verifyPWD(password, confirmPwd){
-    if(password.value.length <6){
+    if(password.value.length < 6){
         alert("PASSWORD NOT LONG ENOUGH")
         return false;
     }
@@ -74,8 +74,10 @@ function verifyPWD(password, confirmPwd){
     if(password.value == confirmPwd.value)
     {
         passwordSame = true;
+        return true;
     }
     else if(password.value !== confirmPwd.value){
         alert("Make sure to write the same password.")
+        return false;
     }
 }
