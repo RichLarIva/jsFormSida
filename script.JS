@@ -31,15 +31,15 @@ function submitForm(){
     var password = document.getElementById("pwd");
     var confirmPwd = document.getElementById("confirmPwd");
     var emailText = document.getElementById("email");
-    var emptyChecker = false;
-    var checkbox = document.getElementById("checkBox");
+    var emptyChecker = true;
 
     if(username.value.length == 0){
         alert("You can't have a short username!!!");
     }
 
     if(username.value.length > 0){
-        emptyChecker = true;
+        emptyChecker = false;
+        return false;
     }
 
     verifyPWD(password, confirmPwd)
@@ -53,7 +53,7 @@ function submitForm(){
         emailReal = false;
     }
 
-    if(passwordSame == true && emailReal == true && checkbox.checked == true && emptyChecker == true){
+    if(passwordSame == true && emailReal == true && emptyChecker == false){
         return true;
 
     }
